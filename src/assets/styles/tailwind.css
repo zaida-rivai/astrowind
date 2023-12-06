@@ -5,6 +5,7 @@
 @layer utilities {
   .bg-page {
     background-color: var(--aw-color-bg-page);
+    /*background-color: #344c47;*/
   }
   .bg-dark {
     background-color: var(--aw-color-bg-page-dark);

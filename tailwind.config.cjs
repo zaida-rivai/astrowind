@@ -7,10 +7,11 @@ module.exports = {
       colors: {
         primary: 'var(--aw-color-primary)',
         secondary: 'var(--aw-color-secondary)',
-        accent: 'var(--aw-color-accent)',
+        // accent: 'var(--aw-color-accent)',
+        accent: '#344B47',
         default: 'var(--aw-color-text-default)',
         muted: 'var(--aw-color-text-muted)',
-        greygreen:'#344B47',
+        // greygreen:'#344B47',
       },
       fontFamily: {
         sans: ['var(--aw-font-sans)', ...defaultTheme.fontFamily.sans],

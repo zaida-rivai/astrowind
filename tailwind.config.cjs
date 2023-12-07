@@ -8,7 +8,7 @@ module.exports = {
         primary: 'var(--aw-color-primary)',
         secondary: 'var(--aw-color-secondary)',
         // accent: 'var(--aw-color-accent)',
-        accent: '#344B47',
+        accent: '#579B8F',
         default: 'var(--aw-color-text-default)',
         muted: 'var(--aw-color-text-muted)',
         // greygreen:'#344B47',

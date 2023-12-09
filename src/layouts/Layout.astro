@@ -11,7 +11,8 @@ import Metadata from '~/components/common/Metadata.astro';
 import SiteVerification  from "~/components/common/SiteVerification.astro"
 import Analytics  from "~/components/common/Analytics.astro"
 import BasicScripts from '~/components/common/BasicScripts.astro';
-
+import { ViewTransitions } from 'astro:transitions';
+import 'aos/dist/aos.css';
 import type { MetaData as MetaDataType } from '~/types';
 
 export interface Props {
@@ -33,11 +34,13 @@ const { language, textDirection } = I18N;
     <Metadata {...metadata} />
     <SiteVerification />
     <Analytics />
+    <ViewTransitions />
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />-->
+
   </head>
 
   <body class="antialiased text-default bg-page tracking-tight">
     <slot />
-
     <BasicScripts />
 
     <style is:global>
@@ -45,5 +48,15 @@ const { language, textDirection } = I18N;
         content-visibility: auto;
       }
     </style>
+    <script is:inline>
+      
+    </script>
+
+    <!--<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>-->
+    <!--<script>-->
+    <!--  document.addEventListener("DOMContentLoaded", function() {-->
+    <!--    AOS.init();-->
+    <!--  });-->
+    <!--</script>-->
   </body>
 </html>
